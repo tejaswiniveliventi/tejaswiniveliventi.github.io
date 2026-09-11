@@ -20,7 +20,7 @@ UDAYA GONEGANDLA — PORTFOLIO
 RESET
 ========================================= */
 
-{
+*{
 box-sizing: border-box;
 margin: 0;
 padding: 0;
@@ -48,15 +48,13 @@ HEADER
 ========================================= */
 
 .site-header {
-max-width: var(--max-width);
-margin: 0 auto;
-padding: 28px 32px;
+    width: min(90%, 1000px);
+    margin: 0 auto;
+    padding: 28px 0;
 
-display: flex;
-align-items: center;
-justify-content: space-between;
-
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
@@ -89,9 +87,8 @@ GENERAL LAYOUT
 ========================================= */
 
 main {
-max-width: var(--max-width);
-margin: 0 auto;
-padding: 0 32px;
+    width: min(90%, 1000px);
+    margin: 0 auto;
 }
 
 .eyebrow {
@@ -110,20 +107,18 @@ PAGE INTRO
 ========================================= */
 
 .page-intro {
-max-width: 760px;
-padding: 100px 0 110px;
+    max-width: 760px;
+    padding: 75px 0 80px;
 }
 
 .page-intro h1 {
-max-width: 700px;
-margin-bottom: 28px;
+    max-width: 700px;
+    margin-bottom: 24px;
 
-font-size: clamp(2.8rem, 6vw, 5rem);
-font-weight: 500;
-letter-spacing: -0.045em;
-line-height: 1.05;
-
-
+    font-size: clamp(2.4rem, 5vw, 3.8rem);
+    font-weight: 500;
+    letter-spacing: -0.035em;
+    line-height: 1.1;
 }
 
 .page-intro > p:last-child {
@@ -304,20 +299,18 @@ FOOTER
 ========================================= */
 
 .site-footer {
-max-width: var(--max-width);
-margin: 0 auto;
-padding: 30px 32px 45px;
+    width: min(90%, 1000px);
+    margin: 0 auto;
+    padding: 30px 0 45px;
 
-display: flex;
-justify-content: space-between;
-align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-border-top: 1px solid var(--line);
+    border-top: 1px solid var(--line);
 
-color: var(--muted);
-font-size: 0.82rem;
-
-
+    color: var(--muted);
+    font-size: 0.82rem;
 }
 
 .site-footer div {
@@ -336,7 +329,8 @@ MOBILE
 @media (max-width: 700px) {
 
 .site-header {
-    padding: 22px 20px;
+     width: 90%;
+    padding: 22px 0;
 }
 
 .site-header nav {
@@ -348,7 +342,7 @@ MOBILE
 }
 
 main {
-    padding: 0 20px;
+    width: 90%;
 }
 
 .page-intro {
@@ -395,7 +389,8 @@ main {
 }
 
 .site-footer {
-    padding: 25px 20px 35px;
+    width: 90%;
+    padding: 25px 0 35px;
 
     flex-direction: column;
     gap: 15px;
