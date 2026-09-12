@@ -321,6 +321,48 @@ gap: 20px;
 .site-footer a:hover {
 color: var(--text);
 }
+/* =========================================
+   SKETCHBOOK
+========================================= */
+
+.sketch-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 45px 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.sketch {
+    margin: 0;
+}
+
+.sketch img {
+    display: block;
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+/* =========================================
+   SKETCHBOOK — MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .sketch-gallery {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .sketch img {
+        max-width: 100%;
+    }
+
+}
+
 
 /* =========================================
 MOBILE
